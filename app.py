@@ -13,9 +13,9 @@ import os
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger()
 
-app = Chalice(app_name="weather-app")
+app = Chalice(app_name="weather-api")
 base_url = os.environ.get("BASE_URL", "http://api.weatherstack.com/current")
-api_key = os.environ.get("API_KEY", "6d6be3d929a588807e3d5ef2c3a4cc3a")  # TO_REMOVE
+api_key = os.environ.get("API_KEY", "<API_KEY>")  # TO_REMOVE
 
 
 @app.route("/")
